@@ -1,0 +1,182 @@
+/*font styles*/
+
+h1,h2,h3,h4 {
+ font-family: 'Roboto', sans-serif;
+}
+
+h4 {
+ font-size: 12px;
+ color: rgba(0,0,0,0.5);
+ text-transform: uppercase;
+}
+h1 {
+ font-size: 35px;
+ letter-spacing: 2px;
+}
+
+h3 {
+ font-weight: 400;
+ font-size: 28px;
+}
+
+a {
+ color: initial;
+ text-decoration: underline;
+}
+
+p {
+ font-family: 'Lora', serif;
+}
+
+/*general page styles*/
+
+.page-content {
+	margin: 1em auto;
+	max-width: 80vw;
+	position: relative;
+}
+
+/*header styles*/
+
+.header {
+	margin-bottom: 3em;
+	height: 100%;
+	position:relative;
+}
+
+.header-image {
+	position: absolute;
+	z-index: -100;
+	opacity: 0.8;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	height: inherit;
+	min-height: 300px;
+}
+
+.header-text {
+	max-width: 50%;
+	min-height: 300px;
+}
+
+
+/*feature section styles*/
+
+.curated-lists {
+	margin-bottom: 3em;
+    -webkit-justify-content: space-between; /* Safari 6.1+ */
+    justify-content: space-between;
+    display: flex;
+}
+
+
+.curated-lists div {
+	position: relative;
+	margin: 0;
+}
+
+#curated-list-3 {
+	padding-right: 7em;
+}
+
+.curated-lists img {
+	width: 20vw;
+}
+
+#curated-list-2 {
+	margin-top: 90px;
+}
+#caption-1, #caption-3 {
+	bottom: 55%;
+}
+
+#caption-2 {
+	bottom: 16%;
+}
+
+.curated-list-caption {
+	position: relative;
+	left: 70%;
+	white-space: nowrap;
+}
+
+@media screen and (min-width: 1000px) {
+	.curated-lists img {
+		width: 280px;
+	}
+}
+
+@media screen and (max-width: 780px) {
+	.curated-lists {
+		display: block;
+	}
+	.curated-lists img {
+		width: 50vw;
+	}
+	.curated-list-caption {
+		left: 0px;
+		top: 40px;
+		float:right;
+	}
+	#curated-list-3 {
+		padding: 0px;
+	}
+	.curated-lists div {
+		margin-top: 2em !important;
+	}
+}
+
+/*product array styles*/
+
+.product-array h3 {
+	text-align: center;	
+	position: relative;
+}
+.photo-bucket { 
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 10px auto;
+	max-width: 83vw;
+	flex: 0 0 50%;
+}
+.photo-bucket img { 
+	width: 18vw;
+	object-fit: contain;
+}
+.product-card {
+	padding: 5px;
+	margin: 10px 2px 0px 2px;
+}
+
+.product-info {
+	position: static;
+	padding-top: 10px;
+	color: rgba(0,0,0,0.8);
+}
+
+.product-info p{
+	font-family: 'Roboto', sans-serif;
+}
+
+.brand-name, .item-desc, .price{
+	line-height: 10px;
+}
+
+.item-desc {
+	font-weight: 300;
+}
+
+.time-posted {
+	font-size: 10px;
+}
+
+.size {
+	float: right;
+	position: relative;
+	bottom: 35px;
+}
+
+
